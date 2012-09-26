@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SiteDaade</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body dir='rtl'>
+
+<%= yield %>
+
+<!-- footer -->
+<footer>
+    <div class="footer-content">
+        <ul class="footer-menu">
+            <li><a href="#main">الرئيسية</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#portfolio">المشاريع</a></li>
+            <li><a href="#about-us">من نحن</a></li>
+            <li><a href="#contact">المدونات</a></li>
+            <!-- <li class="rss-feed"><a href="#">RSS Feed</a></li> -->
+        </ul>
+
+        <p class="footer-text">Copyright 2011 PageOne. &nbsp;&nbsp;&nbsp; Designed by <a href="http://www.styleshout.com/">Styleshout</a></p>
+    </div>
+
+</footer>
+
+</body>
+</html>
