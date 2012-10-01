@@ -1,25 +1,6 @@
 
 <!-- header-wrap -->
-<div id="header-wrap">
-    <header>
 
-        <hgroup>
-            <h1><a href="index.html">الضاد</a></h1>
-            <h3>معا لتطوير الإعلام الآلي في الوطن العربي</h3>
-        </hgroup>
-
-        <nav>
-            <ul>                                 
-                <li><a href="#about-us">من نحن</a></li>
-                <li><a href="#contact">المدونات</a></li>
-                <li><a href="#portfolio">المشاريع</a></li>
-                <li><a href="#services">الخدمات</a></li>
-                 <li><a href="#main">الرئيسية</a></li>
-            </ul>
-        </nav>
-
-    </header>
-</div>
 
 <!-- content-wrap -->
 <div class="content-wrap">
@@ -32,7 +13,7 @@
 
            <p class="intro" dir='rtl'>  فريق الضاد فريقُُ عربي %100 هدفهم نشر الإعلام الآلي باللغة العربية و تقاسم الخبرات و التجارب</p>
 
-           <p class="intro" dir='rtl'> يمكنكم معرفة المزيد عنا <a href="#about-us">الفريق</a> أو <a href="#contact"> الإتصال بنا </a> من أجل الإنضمام معنا</p>
+           <p class="intro" dir='rtl'> يمكنكم معرفة المزيد عنا <a href="#team">الفريق</a> أو <a href="#contact"> الإتصال بنا </a> من أجل الإنضمام معنا</p>
 
 
 
@@ -46,15 +27,15 @@
                 <%= image_tag "proverbe_logo.jpg" %>
                 <%= image_tag "logo7.jpg"  %>
             </div>
-            <div id="htmlcaption" class="nivo-html-caption">
+            <!-- <div id="htmlcaption" class="nivo-html-caption">
                 <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
-            </div>
+            </div> -->
         </div>
 
         
 
         <div class="row no-bottom-margin" dir='rtl'>
-<section class="col">
+           <section class="col">
                 <h2>المشاريع</h2>
 
                 <p>عرض المشاريع</p>
@@ -99,10 +80,11 @@
 
                 <section class="col">
                     <h2>التكوين</h2>
-
+                  
                     <!-- <p><%= image_tag "proverbe_logo.jpg" %></p> -->
 
                 </section>
+            <%= link_to 'المزيد', :controller => "pages", :action => "service" %>
             </div>
 
        <!--    <div class="row">
@@ -130,7 +112,7 @@
       </section>
 
       <!-- portfolio -->
-      <section id="portfolio"dir='rtl'>
+      <section id="projects"dir='rtl'>
 
             <h1>الأخبار و المشاريع المقبلة</h1>
 <!--
@@ -205,16 +187,13 @@
       </section>
 
       <!-- about us -->
-      <section id="about-us" class="clearfix" dir='rtl'>
+      <section id="team" class="clearfix" dir='rtl'>
 
             <h1>من نحن</h1>
 
             <div class="primary">
 
-                <p class="intro">
-                </p>
-
-             <!--    <h2>Template License</h2>
+                  <!--    <h2>Template License</h2>
 
                 <p>This work is released and licensed under the <a href="http://creativecommons.org/licenses/by/2.5/" rel="license">
                 Creative Commons Attribution 3.0 License</a>, which means that you are free to use and modify it for any
@@ -248,22 +227,22 @@
 
                 <h2>الفريق</h2>
 
-                <ul class="the-team">
-                    <li class="odd">
+                <ul class="team">
+                    <li>
                         <div class="thumbnail">
                             <a href="#"><img alt="thumbnail" src="images/thumb-pic.png" width="83" height="78"></a>
                         </div>
                         <p class="mname"><a href="#">خالد دكود</a></p>
                         <p>وزير الشؤون الإجتماعية</p>
                     </li>
-                    <li>
+                     <li class="odd">
                         <div class="thumbnail">
                             <a href="#"><img alt="thumbnail" src="images/thumb-pic.png" width="83" height="78"></a>
                         </div>
                         <p class="mname"><a href="#">الطيب الضادي</a></p>
                         <p>وزير النوم و المواد الغذائية </p>
                     </li>
-                    <li class="odd">
+                    <li>
                         <div class="thumbnail">
                             <a href="#"><img alt="thumbnail" src="images/thumb-pic.png" width="83" height="78"></a>
                         </div>
@@ -271,7 +250,7 @@
                         <p>وزير المالية </p>
                     </li>
                     
- <li>
+                     <li class="odd">
                         <div class="thumbnail">
                             <a href="#"><img alt="thumbnail" src="images/thumb-pic.png" width="83" height="78"></a>
                         </div>
@@ -287,15 +266,16 @@
                         <p>وزير البحث العلمي</p>
                     </li>
 	           
-                    <li>
+                     <li class="odd">
                         <div class="thumbnail">
                             <a href="#"><img alt="thumbnail" src="images/thumb-pic.png" width="83" height="78"></a>
                         </div>
                         <p class="mname"><a href="#">عبد الوهاب الضادي</a></p>
-                        <p>وزير الخارجية</p>
+                        <p>وزير الإتصال</p>
                     </li>
+                  
 	           
-                   <li>
+                    <li>
                         <div class="thumbnail">
                             <a href="#"><img alt="thumbnail" src="images/thumb-pic.png" width="83" height="78"></a>
                         </div>
@@ -306,13 +286,13 @@
 
             </div>
 
-            <aside>
+       <!--     <aside>
 
                     <h2>المزيد عنا</h2>
 
                     <p></p>
 
-                   <!-- <a href="#" class="download-btn">Download PDF</a> -->
+                   <a href="#" class="download-btn">Download PDF</a>
 
 
                     <h2>روابط خارجية</h2>
@@ -335,7 +315,8 @@
                         
                     </div>
 
-            </aside>
+            </aside> 
+-->
 
 
 
@@ -531,7 +512,7 @@
 
             </aside>
 
-            <a class="back-to-top" href="#main">الرجوع إلى الأعلى</a>
+           <!-- <a class="back-to-top" href="#main">الرجوع إلى الأعلى</a> -->
 
      </section>
 

@@ -239,13 +239,25 @@ header {
     margin-bottom: 0;
 }
 .content-wrap section .primary {
+    /*float: left; */
+    width: 620px;
+}
+
+.content-wrap section .primarycontact {
     float: left;
     width: 620px;
 }
+
 .content-wrap section .primary p.intro {
     /* margin: 15px 0 10px 0; */
     margin: 15px 0 25px 0;
 }
+
+.content-wrap section .primarycontact p.intro {
+    /* margin: 15px 0 10px 0; */
+    margin: 15px 0 25px 0;
+}
+
 .content-wrap section aside {
     float: right;
     width: 285px;
@@ -379,7 +391,7 @@ section#main h1 {
     margin-bottom: 15px;
 }
 section#main .intro-box {
-    float:left;
+    float:right;
     width:460px;
     min-height: 300px;
 }
@@ -487,15 +499,15 @@ section#services .row .col img.align-left {
 }
 
 /* ---------------------------------------
-    Portfolio
+    projects
 ----------------------------------------- */
-section#portfolio ul.folio-list {
+section#projects ul.folio-list {
     margin: 25px 0;
     padding: 0;
     width: 970px;
     list-style: none;
 }
-section#portfolio ul.folio-list li {
+section#projects ul.folio-list li {
     float: left;
     margin-right: 29px;
     margin-bottom: 10px;
@@ -504,18 +516,18 @@ section#portfolio ul.folio-list li {
     height: 230px;
     max-height: 250px;
 }
-section#portfolio ul.folio-list li .thumb {
+section#projects ul.folio-list li .thumb {
     margin: 0 0 5px 0;
     padding: 0;
     background: url(thumb-frame.png) no-repeat;
     width: 294px;
     height: 205px;
 }
-section#portfolio ul.folio-list li .thumb img {
+section#projects ul.folio-list li .thumb img {
     margin-top: 18px;
     margin-left: 18px;
 }
-section#portfolio ul.folio-list li h3.entry-title {
+section#projects ul.folio-list li h3.entry-title {
     font-size: 14px;
     line-height: 25px;
     margin-left: 16px;
@@ -524,29 +536,29 @@ section#portfolio ul.folio-list li h3.entry-title {
 /* ------------------------------------------------
     About
 ------------------------------------------------ */
-section#about-us .primary .row .first {
+section#team .primary .row .first {
     margin-right: 35px;
 }
-section#about-us .primary ul.the-team {
+section#team .primary ul.team {
     margin: 25px 0 25px 0;
     padding: 0;
     list-style: none;
 }
-section#about-us .primary ul.the-team li {
-    float: left;
+section#team .primary ul.team li {
+    float: right;
     width: 290px;
     height: 150px;
 }
-section#about-us .primary ul.the-team li a {
+section#team .primary ul.team li a {
     color: #3B3B3B;
 }
-section#about-us .primary ul.the-team li a:hover,
-section#about-us .primary ul.the-team li a:focus,
-section#about-us .primary ul.the-team li a:active {
+section#team .primary ul.team li a:hover,
+section#team .primary ul.team li a:focus,
+section#team .primary ul.team li a:active {
     color: #285935;
 }
 
-section#about-us .primary ul.the-team li .thumbnail {
+section#team .primary ul.team li .thumbnail {
     position: relative;
     float: left;
     background: url(thumb-bg.png) no-repeat;
@@ -554,25 +566,25 @@ section#about-us .primary ul.the-team li .thumbnail {
     height: 150px;
     margin-right: 12px;
 }
-section#about-us .primary ul.the-team li .thumbnail img {
+section#team .primary ul.team li .thumbnail img {
     position: absolute;
     top: 19px;
     left: 18px;
 }
-section#about-us .primary ul.the-team li p {
+section#team .primary ul.team li p {
     font-size: 14px;
     line-height: 20px;
     margin: 5px 0 0 0;
 }
-section#about-us .primary ul.the-team li p.mname {
+section#team .primary ul.team li p.mname {
     font-family: "MerriweatherBold", Serif;
     margin: 10px 0 0 0;
 }
-section#about-us .primary ul.the-team li.odd {
+section#team .primary ul.team li.odd {
     margin-right: 35px;
 }
 
-section#about-us aside .download-btn {
+section#team aside .download-btn {
     background: url(btn-bg.png);
     display: block;
     width: 250px;
@@ -601,7 +613,22 @@ section#contact .primary form {
     margin: 35px 0 25px 0;
     padding: 50px 40px 50px 40px;
 }
+
+section#contact .primarycontact form {
+    width: 500px;
+    background: url(form-bg.png);
+    margin: 35px 0 25px 0;
+    padding: 50px 40px 50px 40px;
+}
+
+
 section#contact .primary form p {
+	font-family: "MerriweatherBold", Serif;
+    font-size: 14.5px;
+	color: #046416;
+}
+
+section#contact .primarycontact form p {
 	font-family: "MerriweatherBold", Serif;
     font-size: 14.5px;
 	color: #046416;
@@ -614,12 +641,21 @@ section#contact .primary form label {
     margin: 0 0 5px 0;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
 }
+
+section#contact .primarycontact form label {
+    display: block;
+    font-family: "MerriweatherBold", Serif;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0 0 5px 0;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+}
 section#contact .primary form label span {
     color: #046416;
 }
-section#contact .primary form input,
-section#contact .primary form select,
-section#contact .primary form textarea {
+section#contact .primarycontact form input,
+section#contact .primarycontact form select,
+section#contact .primarycontact form textarea {
     margin-bottom: 20px;
 	padding: 9px 10px;
     color: #6A6969;
@@ -633,16 +669,16 @@ section#contact .primary form textarea {
     -webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, .1);
     box-shadow:inset 0 1px 3px rgba(0, 0, 0, .1);
 }
-section#contact .primary form textarea {
+section#contact .primarycontact form textarea {
     height: 325px;
     margin-bottom: 0;
 }
-section#contact .primary form input:focus,
-section#contact .primary form select:focus,
-section#contact .primary form textarea:focus {
+section#contact .primarycontact form input:focus,
+section#contact .primarycontact form select:focus,
+section#contact .primarycontact form textarea:focus {
 	background: #F0F0F0;
 }
-section#contact .primary form input.button {
+section#contact .primarycontact form input.button {
    	height: 38px;
 	margin: 5px 0;
 	background: #1F8532 url(btn-bg.png);
@@ -657,7 +693,7 @@ section#contact .primary form input.button {
     -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #28a441;
     -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #28a441;
 }
-.ie7 section#contact .primary form input.button {
+.ie7 section#contact .primarycontact form input.button {
     padding: 0 2px;
 }
 #name, #email, #message, #subject, #website {
