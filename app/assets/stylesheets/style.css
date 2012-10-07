@@ -9,7 +9,10 @@
 
  /* ------------------------------------------------
     CUSTOM WEB FONTS
+
 --------------------------------------------------*/
+
+
 @font-face {
     font-family: 'MerriweatherRegular';
     src: url('fonts/merriweather-regular-webfont.eot');
@@ -91,12 +94,81 @@ body {
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
 }
 
+
+.container:before, .container:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+.container:after {
+  clear: both;
+}
+.container-fluid {
+  position: relative;
+  min-width: 940px;
+  padding-left: 20px;
+  padding-right: 20px;
+  zoom: 1;
+}
+.container-fluid:before, .container-fluid:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+.container-fluid:after {
+  clear: both;
+}
+.container-fluid > .sidebar {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 220px;
+}
+.container-fluid > .content {
+  margin-left: 240px;
+}
+a {
+  color: #285935;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+a:hover {
+  color: #00438a;
+  text-decoration: underline;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.row:before, .row:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+.row:after {
+  clear: both;
+}
+
+
+
+
+
 p { margin-bottom: 25px; }
 p.intro { font-size: 18px; }
 
 /* links */
 a:link, a:visited {
-    color: #285935;
+   /*  color: #285935; */
     text-decoration: none;
     outline: 0;
 }
@@ -195,7 +267,7 @@ mark {
 #header-wrap {
     background: url(header-bg.png);
     width: 100%;
-    height: 70px;
+    height: 50px;
     z-index: 99999;
     position: fixed;
     top: 0;
@@ -204,9 +276,11 @@ mark {
 header {
     position: relative;
     width: 940px;
-    height: 70px;
+    height: 50px;
     margin: 0 auto;
 }
+
+
 .content-wrap {
     width: 940px;
     margin: 0 auto;
@@ -338,7 +412,7 @@ footer {
 header hgroup {
     position: absolute;
     /*background: url(dad.png) no-repeat;*/
-    height: 31px;
+    height: 25px;
     width: 312px;
     display: block;
     top: 25px;
@@ -399,6 +473,7 @@ section#main .row .col h2 {
     margin-top: 15px;
     margin-bottom: 10px;
 }
+
 
 /* Slider */
 .slider-wrapper {
@@ -642,6 +717,7 @@ section#contact .primary form label {
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
 }
 
+
 section#contact .primarycontact form label {
     display: block;
     font-family: "MerriweatherBold", Serif;
@@ -771,5 +847,7 @@ footer  ul.footer-menu li.rss-feed a {
 footer  ul.footer-menu li:first-child a {
     border: none;
 }
+
+
 
 

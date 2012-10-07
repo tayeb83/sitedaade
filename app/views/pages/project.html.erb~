@@ -6,7 +6,7 @@ Insérer un projet avec une image et une description
   
 <div class="span4">
 
-    <a href="http://artproverbesrails1.heroku.com/" class="thumbnail">
+    <a href="/assets/proverbe_logo.jpg" class="thumbnail">
     <%= image_tag "proverbe_logo.jpg" %>
     </a>
 

@@ -6,7 +6,7 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
 <div id="header-wrap">
     <header>
 
@@ -16,12 +16,13 @@
         </hgroup>
 
         <nav>
-            <ul>                                 
-                <li><a href="#team">من نحن</a></li>
-                <li><a href="#blogs">المدونات</a></li>
-                <li><a href="#projects">المشاريع</a></li>
-                <li><a href="#services">الخدمات</a></li>
-                 <li><a href="#main">الرئيسية</a></li>
+            <ul>    
+                <li><%=link_to 'الإتصال بنا', "home#contact" %> </li>                             
+                <li> <%=link_to 'من نحن'  , "home#team"%> </li>
+                <li><%=link_to 'المدونات'  , :controller =>  "pages", :action => "blog"%></li>
+                <li><%=link_to 'المشاريع'  , :controller =>  "pages", :action => "project"%> </li>
+                <li><%=link_to 'الخدمات'  , :controller =>  "pages", :action => "service"%></li>
+                 <li><a href="home#main">الرئيسية</a></li>
             </ul>
         </nav>
 
@@ -34,6 +35,7 @@
 <footer>
     <div class="footer-content">
         <ul class="footer-menu">
+           <li><a href="#contact">الإتصال بنا</a></li>  
             <li><a href="#team">من نحن</a></li>
                 <li><a href="#blogs">المدونات</a></li>
                 <li><a href="#projects">المشاريع</a></li>

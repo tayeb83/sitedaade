@@ -17,12 +17,12 @@
 
         <nav>
             <ul>    
-                <li><a href="#contact">الإتصال بنا</a></li>                             
-                <li><a href="#team">من نحن</a></li>
-                <li><a href="#blogs">المدونات</a></li>
-                <li><a href="#projects">المشاريع</a></li>
-                <li><a href="#services">الخدمات</a></li>
-                 <li><a href="#main">الرئيسية</a></li>
+                <li><%=link_to 'الإتصال بنا', "home#contact" %> </li>                             
+                <li> <%=link_to 'من نحن'  , "home#team"%> </li>
+                <li><%=link_to 'المدونات'  , :controller =>  "pages", :action => "blog"%></li>
+                <li><%=link_to 'المشاريع'  , :controller =>  "pages", :action => "project"%> </li>
+                <li><%=link_to 'الخدمات'  , :controller =>  "pages", :action => "service"%></li>
+                 <li><a href="home#main">الرئيسية</a></li>
             </ul>
         </nav>
 
