@@ -35,30 +35,33 @@
             </div> -->
         </div>
 
-        
+        <div class="row" dir="rtl">
 
-        <div class="row no-bottom-margin" dir='rtl'>
-           <section class="col">
-                <h2>المشاريع</h2>
-
-                <p>عرض المشاريع</p>
-            </section>
- 
-
-            <section class="col mid">
+              <div class="span4">
                 <h2>القيم</h2>
 
                 <p>ماهي قيم الضاد ؟</p>
-            </section>
+              </div>
+	      <div class="span6 offset2">
+                            <h2>الأهداف</h2>
 
-            
- 
-            <section class="col">
-                <h2>الأهداف</h2>
+                
+  <div id="list2">
+	 
+                <ol>
+للضاد أهداف متنوعة و طموحات كبيرة من بينها  :
+               <li>المساهمة بشكل فعال و على أعلى مستوى في إثراء المحتوى العربي في مجال الإعلام الألي </li>
+                <li>تسهيل التعاون و إعطاء الفرصة للمواهب الطموحة على المستوى العربي</li>
+  		<li>تطوير أدوات و برامج طمُوحة و مُبتدعة</li>
+		<li>المُساهمة في التكوين من طرف خُبراء و مُتخصصين في عدة مجالات و لغات برمجة</li>
+		
+                </ol>
+	
+</div>
+              </div>
+	</div>
 
-                <p>ماهي أهدافنا ؟ و ماذا نريد ؟</p>
-            </section>
-        </div>
+
 
         <a class="back-to-top" href="#main">الرجوع إلى اﻷعلى</a>
 
@@ -85,7 +88,7 @@
                     <h2>التكوين</h2>
                        
     			 <p>في القريب سوف </p>
-    			 <%= link_to 'المزيد', {:controller => "pages", :action => "service"}, :class => "btn btn-primary btn-large" %>
+    			 <%= link_to 'المزيد', {:controller => "pages", :action => "service"}, :class => "btn btn-primary" %>
     				
     		
 
@@ -444,9 +447,6 @@
 
             <div class="primarycontact">
 
-                <p class="intro">
-                
-                </p>
 
                 <form method="post" action="contact.php" id="contactform">
 
@@ -510,15 +510,14 @@
 
                     <h2>تابعنا</h2>
 
-                    <ul class="link-list social">
-                        <li class="facebook"><a href="#">الفيسبوك</a></li>
-                       <!-- <li class="googleplus"><a href="#">Google+</a></li> -->
-                        <li class="twitter"><a href="#">التويتر</a></li>
-                       <!-- <li class="dribble"><a href="#">Dribble</a></li>
-                        <li class="linkedin"><a href="#">Linkedin</a></li>
-                        <li class="delicious"><a href="#">Delicious</a></li>
-                        <li class="flickr"><a href="#">Flickr</a></li> -->
-                    </ul>
+<ul class="tt-wrapper">
+    <li><a class="tt-gplus" href="#"><span>Google Plus</span></a></li>
+    <li><a class="tt-twitter" href="#"><span>Twitter</span></a></li>
+    <li><a class="tt-dribbble" href="#"><span>Dribbble</span></a></li>
+    <li><a class="tt-facebook" href="#"><span>Facebook</span></a></li>
+    <li><a class="tt-linkedin" href="#"><span>LinkedIn</span></a></li>
+    <li><a class="tt-forrst" href="#"><span>Forrst</span></a></li>
+</ul>
 
             </aside>
 

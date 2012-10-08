@@ -128,7 +128,7 @@ body {
   margin-left: 240px;
 }
 a {
-  color: #0069d6;
+  color: #285935;
   text-decoration: none;
   line-height: inherit;
   font-weight: inherit;
@@ -203,7 +203,8 @@ ul, ol {
 	margin-bottom: 25px;
 	padding: 0 20px;
 }
-ul { list-style: disc; }
+/*ul { list-style: disc; }*/
+ul { list-style:none; }
 ol { list-style: decimal; }
 
 dl { margin-bottom: 25px; }
@@ -303,7 +304,8 @@ header {
     float: left;
     margin: 0;
     padding: 0;
-    width: 290px;
+    width: 390px;
+    font-size:x-small;
 }
 .content-wrap section .row .mid  {
     margin-left: 35px;
@@ -319,7 +321,7 @@ header {
 
 .content-wrap section .primarycontact {
     float: left;
-    width: 620px;
+    width: 500px;
 }
 
 .content-wrap section .primary p.intro {
