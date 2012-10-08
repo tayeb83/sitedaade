@@ -305,7 +305,7 @@ header {
     margin: 0;
     padding: 0;
     width: 390px;
-    font-size:x-small;
+    font-size:11px;
 }
 .content-wrap section .row .mid  {
     margin-left: 35px;
